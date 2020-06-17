@@ -1,4 +1,6 @@
 import random
+import sqlite3
+
 operators = ["/","+","*","-"]
 #Dictionary of functions used to calculate the answer to the randomly generated question
 operator_functions = {
@@ -7,6 +9,9 @@ operator_functions = {
     '*': lambda a, b: a * b, 
     '/': lambda a, b: a / b,
 }
+
+print("Welcome to my maths quiz")
+name = input("What is your name? ")
 
 
 def question():
