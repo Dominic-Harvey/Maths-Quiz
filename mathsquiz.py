@@ -22,9 +22,9 @@ def question_gen():
         multiples_range = first_number * 10
         start_range = random.randrange(multiples_range)
         end_range = start_range + first_number   
-        multiple_var = [n for n in range(start_range, end_range) if n % (first_number) == 0]
-        print (f"{multiple_var[0]}{picked_operator}{first_number}")
-        correct_answer = operator_functions[picked_operator]( multiple_var[0], first_number)
+        multiple_of_first_number = [n for n in range(start_range, end_range) if n % (first_number) == 0]
+        print (f"{multiple_of_first_number[0]}{picked_operator}{first_number}")
+        correct_answer = operator_functions[picked_operator](multiple_of_first_number[0], first_number)
     else:
         print (f"{first_number}{picked_operator}{second_number}")
         correct_answer = operator_functions[picked_operator](first_number, second_number)
