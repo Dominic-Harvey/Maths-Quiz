@@ -65,11 +65,10 @@ for _ in range(number_of_questions):
     current_score = current_score + score_to_add
     print (f"You current score is: {current_score}")
 
-'''
+
 try:
     mathsquizSQLite.database(name, current_score)
     print (f"Your final score of {current_score}/{number_of_questions} and Name have been saved in the database")
 except:
     e = sys.exc_info()[0]
     print ("Error adding entry in database", e)
-'''
