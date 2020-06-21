@@ -38,10 +38,9 @@ def ask_question():
                 answer = int(input("What is the answer? " ))
                 if isinstance(answer,(int)) == True:
                     valid_answer = True
-                    return answer
             except:
-                valid_answer = False
                 print ("Please enter a int")
+            return answer
 
 #checks if the users input is equal to the answer
 def update_score(correct_answer, answer):
@@ -55,7 +54,7 @@ def update_score(correct_answer, answer):
 
 print("Welcome to my maths quiz")
 name = input("What is your name? ")
-number_of_questions = int(input("How many questions would you like to answer?"))
+number_of_questions = int(input("How many questions would you like to answer? "))
 current_score = 0
 
 for _ in range(number_of_questions):
